@@ -1,11 +1,7 @@
-const amount = 12
 
-if (amount < 10) {
-    console.log('small number')
-}
+console.log(__filename)
 
-else{
-    console.log('large number')
-}
+setInterval(() => {
+  console.log('Hello!')
+}, 10)
 
-console.log(`hey it's my first node app!!!`)
