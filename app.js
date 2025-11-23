@@ -1,7 +1,11 @@
+// const secret = 'Herce'
+// const john = 'kave'
+// const mupepe = 'mupepe'
 
-console.log(__filename)
+const names = require('./4-names')
+const sayHi = require('./utils')
 
-setInterval(() => {
-  console.log('Hello!')
-}, 10)
+sayHi('susan')
+sayHi(names.john)
+sayHi(names.mupepe)
 
