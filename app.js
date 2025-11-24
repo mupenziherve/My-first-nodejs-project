@@ -1,12 +1,19 @@
-// const secret = 'Herce'
-// const john = 'kave'
-// const mupepe = 'mupepe'
+const os = require('os')
+const { release } = require('process')
+// info about cureent user
+const user = os.userInfo()
+console.log(user)
 
-const names = require('./4-names')
-const sayHi = require('./utils')
-const data = require('./6-altenative')
-require('./7-mind-grenade')
-// sayHi('susan')
-// sayHi(names.john)
-// sayHi(names.mupepe)
+// methd returns the system uptime in secs
+
+console.log(`The System Uptime is ${os.uptime()} seconds`)
+
+const currentOS = {
+    name:os.type(),
+    release: os.release(),
+    totalMem:os.totalmem(),
+    freeMem: os.freemem(),
+}
+
+console.log(currentOS)
 
