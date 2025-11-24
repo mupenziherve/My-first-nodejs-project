@@ -4,8 +4,9 @@
 
 const names = require('./4-names')
 const sayHi = require('./utils')
-
-sayHi('susan')
-sayHi(names.john)
-sayHi(names.mupepe)
+const data = require('./6-altenative')
+require('./7-mind-grenade')
+// sayHi('susan')
+// sayHi(names.john)
+// sayHi(names.mupepe)
 
