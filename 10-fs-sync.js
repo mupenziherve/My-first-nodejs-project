@@ -7,4 +7,4 @@ writeFileSync(
   './content/result-sync.txt',
   `here is the result : ${first}, ${secord}`, {flag: 'a'}
 )
-
+dd
