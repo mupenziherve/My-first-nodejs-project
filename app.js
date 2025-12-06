@@ -1,28 +1,13 @@
-const { readFile, writeFile } = require('fs')
+const { readFileSync, writeFileSync } = require('fs')
+console.log('start');
+const first = readFileSync('./content/first.txt', 'utf8')
+const secord = readFileSync('./content/secord.txt', 'utf8')
 
-readFile('./content/first.txt','utf8', (err, result) => {
+writeFileSync(
+  './content/result-sync.txt',
+  `here is the result : ${first}, ${secord}`,
+  { flag: 'a' }
+)
 
-    if (err) {
-        console.log(err)
-        return
-    }
-const first = result;
-readFile('./content/secord.txt','utf8',(err,result)=>{
- 
-    if (err) {
-      console.log(err)
-      return
-    }
-    const secord = result
-    writeFile(
-      '/content/result-async.txt',
-      `here is the result : ${first}, ${secord}`,(err,result)=>{
-
-   }
-    )
-
-})
-
-  console.log(result);
-     
-})
+console.log('done with this task');
+console.log('starting the next one ')
