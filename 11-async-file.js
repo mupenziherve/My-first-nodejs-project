@@ -1,4 +1,5 @@
 const { readFile, writeFile } = require('fs');
+console.log('start')
 
 readFile('./content/first.txt','utf8', (err, result) => {
 
@@ -13,7 +14,7 @@ readFile('./content/secord.txt','utf8',(err,result)=>{
       console.log(err)
       return
     }
-    const secord = result
+    const secord = result;
     writeFile(
       './content/result-async.txt',
       `here is the result : ${first}, ${secord}`,(err,result)=>{
@@ -21,13 +22,13 @@ readFile('./content/secord.txt','utf8',(err,result)=>{
           console.log(err)
           return   
         }
-        console.log(result)
+        console.log("done with Dis task")
 
    }
     )
 
 })
 
-  console.log(result);
+  console.log('starting Next file');
      
 })
