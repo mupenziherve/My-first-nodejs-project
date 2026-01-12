@@ -1,5 +1,6 @@
-const _ = require('lodash')
-const items = [1, [2, [3, [4]]]]
-const newItems = _.flattenDeep(items)
-console.log(newItems)
-console.log("Hello mupep") 
+const { readFile } = require('fs')
+
+console.log('started a first tast')
+readFile('.constent/first.txt', 'utf8', (err, result)=>{
+    
+})
