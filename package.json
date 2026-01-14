@@ -2,7 +2,7 @@
   "name": "first",
   "version": "1.0.0",
   "description": "",
-  "main": "10-fs-sync.js",
+  "main": "app.js",
   "dependencies": {
     "accepts": "^2.0.0",
     "body-parser": "^2.2.1",
