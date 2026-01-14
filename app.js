@@ -1,7 +1,7 @@
-// started operating system process
-console.log('first')
-setTimeout(() => {
-  console.log('second')
+setInterval(() => {
+  console.log('hello world')
 }, 0)
-console.log('third')
-// completed and exited operating system process
+console.log(`I will run first`)
+// process stays alive unless
+// Kill Process CONTROL + C
+// unexpected error
